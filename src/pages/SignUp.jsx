@@ -4,6 +4,7 @@ import { NetflixInbut, NetflixButton } from '../styled/styledcomponents';
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 import netflixApp from '../firebase.js';
 import { useNavigate } from 'react-router-dom';
+import React from 'react';
 
 function SignUp() {
   const classes = useStyles();

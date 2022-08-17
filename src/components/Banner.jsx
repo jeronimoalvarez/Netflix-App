@@ -2,13 +2,14 @@ import { Button, makeStyles, Typography } from '@material-ui/core';
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import requests from '../Request';
+import React from 'react';
 
 const Banner = () => {
     const classes = useStyles();
     const [movie, setMovie] = useState([])
 
     const truncate = (string, n) => 
-      string?.lenght > n ? `${string.substr(0, n - 1)} ...` : string 
+      string.lenght > n ? `${string.substring(0, n - 1)} ...` : string 
 
       useEffect(() => {
         const fetchData = async () => {

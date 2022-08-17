@@ -6,11 +6,11 @@ import Login from './pages/Login';
 import Paypal from './pages/Paypal';
 import Profile from './pages/Profile';
 import { getAuth } from 'firebase/auth';
-import { useDispatch, useSelector } from 'react-redux';
-import { login, logout, selectUser } from './features/UserSlice'
+import { useDispatch } from 'react-redux';
+import { login, logout } from './features/UserSlice'
+import React from 'react';
 
 function App() {
-  const user = useSelector(selectUser);
   const classes = useStyles();
   const auth = getAuth();
   const dispatch = useDispatch()

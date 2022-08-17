@@ -1,6 +1,7 @@
 import { makeStyles, Typography } from '@material-ui/core';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import React from 'react';
 
 const Row = ({title, fetchUrl, isLargeRow}) => {
   const classes = useStyles();
@@ -33,8 +34,8 @@ const Row = ({title, fetchUrl, isLargeRow}) => {
                 <img
                   className={`${classes.poster} ${isLargeRow && classes.posterLarge}`}
                   key={movie.id}
-                  src={`${base_url}${isLargeRow ? movie.poster_path : movie?.backdrop_path}`}
-                  alt={movie?.name}
+                  src={`${base_url}${isLargeRow ? movie.poster_path : movie.backdrop_path}`}
+                  alt={movie.name}
                 />
               )
           )

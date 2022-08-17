@@ -2,6 +2,7 @@ import { makeStyles } from '@material-ui/core';
 import { useEffect, useRef } from 'react';
 import { useSelector } from 'react-redux'
 import { selectPrice } from '../features/PriceSlice'
+import React from 'react';
 
 function Paypal() {
   const classes = useStyles();
