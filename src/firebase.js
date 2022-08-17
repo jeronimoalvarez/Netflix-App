@@ -1,12 +1,12 @@
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_FIREBASE_APIKEY,
-  authDomain: process.env.REACT_APP_FIREBASE_AUTHDOMAIN,
-  projectId: process.env.REACT_APP_FIREBASE_PROJECTID,
-  storageBucket: process.env. REACT_APP_FIREBASE_STORAGEBUCKET,
-  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGINGSENDERID,
-  appId: process.env.REACT_APP_FIREBASE_APPID
+  apiKey: "AIzaSyBRFvNGdupktozV9rIWzmMXzz0vr21BieA",
+  authDomain: "netflix-clone-7d59f.firebaseapp.com",
+  projectId: "netflix-clone-7d59f",
+  storageBucket: "netflix-clone-7d59f.appspot.com",
+  messagingSenderId: "851480500426",
+  appId: "1:851480500426:web:55227b1ac563cd7a5b7c33"
 };
 
 const netflixApp = initializeApp(firebaseConfig);
